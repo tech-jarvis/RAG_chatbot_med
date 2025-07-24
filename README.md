@@ -36,31 +36,9 @@ This project aims to enhance medical information retrieval for remote patients i
 4. Run `docker images` to check the available images.
 5. Run `docker ls` to check the running containers.
 6. Run `docker run -p 6333:6333 qdrant/qdrant` to start the Qdrant container.
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/6579c70e-e697-40b2-8142-72ea175ae1a0)
-
-
-### Usage
-
-1. Run `python ingest.py` to create the database and ingest the medical documents. The Qdrant dashboard will be available at `http://localhost:6333/dashboard`.
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/f2235852-0153-4db8-991f-57cfb9714641)
-
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/9d7fa324-db51-47b7-bde3-0a9eb49aa04b)
-
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/1079fad4-baeb-402b-86ae-47e412da00eb)
-
-
-
-2. Run `python retriever.py` to check if the model is responding well.
-
-Top 2 retrived chunks with meta-data based on question : What is Metastatic disease?
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/3bee2ee8-4a8e-48e6-8b68-fcb4d4dcc858)
-
-
-3. Run `uvicorn rag:app` to start the FastAPI and Flask-based application. (check at:  http://127.0.0.1:8000)
+7. Run `python retriever.py` to check if the model is responding well.
+8. Run `uvicorn rag:app` to start the FastAPI and Flask-based application. (check at:  http://127.0.0.1:8000)
 - the app will give output on an average 25-30 seconds due to LLM running on local machine with CPU. It will also give the context along with meta-data such as from which document, from which page etc. 
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/e855e0fe-771a-4720-a070-6fd2eaccfd14)
-
-![image](https://github.com/fenil210/Medical-RAG/assets/121050723/6dbf6c87-e9ae-4042-a7b3-4550b9a3f5af)
 
 
 ## Contributing
@@ -72,10 +50,6 @@ If you'd like to contribute to this project, please follow these steps:
 3. Make your changes and commit them with descriptive commit messages.
 4. Push your changes to your forked repository.
 5. Create a pull request, describing your changes in detail.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
