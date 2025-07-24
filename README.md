@@ -34,7 +34,7 @@ This innovative project combines state-of-the-art Language Models (LLMs) with se
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/fenil210/Medical-RAG
+   git clone https://github.com/tech-jarvis/RAG_chatbot_med.git
    ```
 
 2. **Install Dependencies**
